@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/fluffybird-ui-rdu-retargeting/static/css/main.658fce59.css",
+    "main.js": "/fluffybird-ui-rdu-retargeting/static/js/main.e679814f.js",
+    "static/media/edge-icons-Regular.eot": "/fluffybird-ui-rdu-retargeting/static/media/edge-icons-Regular.c032ab831fb174ba5386.eot",
+    "static/media/edge-icons-Regular.ttf": "/fluffybird-ui-rdu-retargeting/static/media/edge-icons-Regular.bb3d8db0eac3127e85c3.ttf",
+    "static/media/edge-icons-Regular.woff": "/fluffybird-ui-rdu-retargeting/static/media/edge-icons-Regular.c46c3f1a17158927f5d3.woff",
+    "static/media/spinner-rosetta-blue-32x32@2x.gif": "/fluffybird-ui-rdu-retargeting/static/media/spinner-rosetta-blue-32x32@2x.707448add32f97d38b57.gif",
+    "static/media/spinner-rosetta-blue-26x26@2x.gif": "/fluffybird-ui-rdu-retargeting/static/media/spinner-rosetta-blue-26x26@2x.fab0d764562e41438879.gif",
+    "index.html": "/fluffybird-ui-rdu-retargeting/index.html",
+    "main.658fce59.css.map": "/fluffybird-ui-rdu-retargeting/static/css/main.658fce59.css.map",
+    "main.e679814f.js.map": "/fluffybird-ui-rdu-retargeting/static/js/main.e679814f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.658fce59.css",
+    "static/js/main.e679814f.js"
+  ]
+}
