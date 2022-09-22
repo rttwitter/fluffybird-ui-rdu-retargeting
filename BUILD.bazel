@@ -1,0 +1,20 @@
+node_module(
+    name = "react-app",
+    sources = [
+        ".env",
+        "package.json",
+        "public/**/*",
+        "src/**/*",
+        "tsconfig.json",
+        "yarn.lock",
+    ],
+    build_script = "build",
+    output_dir = "dist",
+    package_manager = "yarn",
+)
+
+node_test(
+    name = "react-app-test",
+    script_name = "test-ci",
+    dependencies = [":react-app"],
+)
