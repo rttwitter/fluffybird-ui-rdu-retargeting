@@ -2,7 +2,7 @@ import React from 'react';
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-it('renders welcome message', () => {
+test('renders correctly', () => {
   render(<App />);
-  expect(screen.getByText('Learn React')).toBeInTheDocument();
+  expect(screen.getByText('Dashboard')).toBeInTheDocument();
 });

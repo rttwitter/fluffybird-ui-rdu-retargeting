@@ -1,16 +1,14 @@
 {
+  "homepage": "http://rttwitter.github.io/fluffybird-ui-rdu-retargeting",
   "name": "fluffybird-ui-rdu-retargeting",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
-    "@testing-library/react": "^12.1.5",
     "@twitter/feather": "^6.4.0",
     "@twitter/prettier-config": "^1.0.0",
     "@types/jest": "^27.5.2",
     "@types/node": "^14.18.21",
-    "@types/react": "^17.0.45",
-    "@types/react-dom": "^17.0.17",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
     "hygen": "^6.2.7",
@@ -21,6 +19,7 @@
     "typescript": "~4.4.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -28,7 +27,7 @@
     "install": "if [ -e build-template ]; then mv build-template BUILD.bazel && yarnpkg upgrade react@^17.0.2 react-dom@^17.0.2 && npx yarn-deduplicate --strategy fewer ; fi",
     "test-ci": "tsc --noEmit && eslint --ext .js,.jsx,.ts,.tsx --max-warnings 0 src && CI=true react-scripts test --watchman false --haste '{\"enableSymlinks\": true}'",
     "generate": "npx @twitter/feather-ts-templates \"$(which hygen)\"",
-    "deploy": "if command -v static-sites >/dev/null 2>&1; then yarnpkg build && static-sites publish --sandbox --serve-missing-directories react-app dist; else printf >&2 '\\nPlease install the static-sites CLI in MDE: MDE Preferences... > eng > optional > static_sites\\n\\n' && exit 1; fi"
+    "deploy": "gh-pages -d dist"
   },
   "eslintConfig": {
     "extends": [
@@ -49,5 +48,11 @@
       "last 1 safari version"
     ]
   },
-  "prettier": "@twitter/prettier-config"
+  "prettier": "@twitter/prettier-config",
+  "devDependencies": {
+    "@testing-library/react": "^12.1.5",
+    "@types/react": "^17.0.50",
+    "@types/react-dom": "^17.0.17",
+    "gh-pages": "^4.0.0"
+  }
 }
